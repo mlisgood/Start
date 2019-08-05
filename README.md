@@ -11,11 +11,10 @@ Desktop：桌面图标插件，可以在桌面上悬浮一系列小图标，并�
 
 项目说明：文件夹名称和各模块对应，Notepad和Lock中各有1和2个dll工程，因为这两个模块的部分功能需要dll实现。该项目用到了非常多的图片资源，下载时请保证图片资源的完整性，否则可能无法编译成功
 项目结构：
-
-       /--Notepad--FileReadAndWrite
-       /          
-       /--Tools
-start--/
-       /--Lock--LockSimple and LockNormal     
-       /
-       /--Desktop
+        |--Notepad--FileReadAndWrite
+        |          
+        |--Tools
+ start--|        |--LockSimple
+        |--Lock--|  
+        |        |--LockNormal
+        |--Desktop
