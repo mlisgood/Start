@@ -13,13 +13,9 @@ Desktop：桌面图标插件，可以在桌面上悬浮一系列小图标，并�
 项目结构：
 
        |--Notepad--FileReadAndWrite
-       |
-       |           
+       |          
        |--Tools
-       |
 start--|
-       |        |--LockSimple
-       |--Lock--|
-       |        |--LockNormal
+       |--Lock--LockSimple and LockNormal     
        |
        |--Desktop
