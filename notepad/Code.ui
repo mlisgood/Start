@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CodeClass</class>
+ <widget class="QDialog" name="CodeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>201</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>编码设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Notepad.qrc">
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close_dialog">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>150</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_exit_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_exit_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_accept_dialog">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>150</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_accept_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_accept_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>45</y>
+     <width>154</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>Big5</string>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>Big5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Big5-HKSCS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CP949</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EUC-JP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EUC-KR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GB18030</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HP-ROMAN8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IBM 850</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IBM 866</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IBM 874</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 2022-JP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISO 8859-16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Bng</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Dev</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Gjr</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Knd</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Mlm</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Ori</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Pnj</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Tlg</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iscii-Tml</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>KOI8-R</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>KOI8-U</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Macintosh</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Shift-JIS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>TIS-620</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>TSCII</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-16BE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-16LE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-32</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-32BE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UTF-32LE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1250</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1251</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1252</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1253</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1254</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1255</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1256</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1257</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Windows-1258</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>258</x>
+     <y>81</y>
+     <width>280</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections/>
+</ui>

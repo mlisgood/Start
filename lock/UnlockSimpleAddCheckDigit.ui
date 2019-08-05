@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnlockSimpleAddCheckDigitClass</class>
+ <widget class="QDialog" name="UnlockSimpleAddCheckDigitClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>加减数量</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>158</x>
+     <y>340</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_10.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_10.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>141</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QListWidget::Item:hover
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected:!active
+{
+    background:#C0FDEAD3;
+}
+/*滚动条*/
+QListWidget QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png); 
+    border: 0px;
+    width: 15px;
+}
+QListWidget QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QListWidget QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+}
+QListWidget QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QListWidget QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QListWidget QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png); 
+    border: 0px; 
+    height: 15px;
+}
+QListWidget QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTreeView QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="batchSize">
+    <number>16</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

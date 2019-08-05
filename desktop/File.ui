@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileClass</class>
+ <widget class="QDialog" name="FileClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>颜色设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Desktop.qrc">
+    <normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_desktop/icon/picture_desktop/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTreeView" name="treeView_file">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>500</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*总体设置*/
+QTreeView
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QTreeView::Item:hover
+{
+    background:#C0FDEAD3;
+}
+QTreeView::item:selected
+{
+    background:#C0FDEAD3;
+}
+QTreeView::item:selected:!active
+{
+    background:#C0FDEAD3;
+}
+/*滚动条*/
+QTreeView QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png); 
+    border: 0px;
+    width: 9px;
+}
+QTreeView QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QTreeView QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_vertical.png);
+}
+QTreeView QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png);
+}
+QTreeView QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png);
+}
+QTreeView QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QTreeView QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QTreeView QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/down.png);
+}
+QTreeView QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/up.png);
+}
+QTreeView QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_horizental.png); 
+    border: 0px; 
+    height: 9px;
+}
+QTreeView QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTreeView QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QTreeView QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QTreeView QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/left.png);
+}
+QTreeView QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/right.png);
+}
+/*分支按钮*/
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/down_branch.png);
+}
+QTreeView::branch:has-children:!has-siblings:closed:hover,
+QTreeView::branch:closed:has-children:has-siblings:hover
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/down_branch.png);
+}
+QTreeView::branch:has-children:!has-siblings:closed:pressed,
+QTreeView::branch:closed:has-children:has-siblings:pressed
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/down_branch.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings 
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/up_branch.png);
+    width:12px;
+    height:8px;
+}
+QTreeView::branch:open:has-children:!has-siblings:hover,
+QTreeView::branch:open:has-children:has-siblings:hover
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/up_branch.png);
+}
+QTreeView::branch:open:has-children:!has-siblings:pressed,
+QTreeView::branch:open:has-children:has-siblings:pressed
+{
+    border-image: none;
+    image: url(:/picture_desktop/treeview/picture_desktop/treeview_style/up_branch.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_open">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>510</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_desktop/dialogicon/picture_desktop/icon/dialog_filedialog_open_normal.png);
+border-image: url(:/picture_desktop/dialogicon/picture_desktop/icon/dialog_filedialog_open_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>510</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_desktop/dialogicon/picture_desktop/icon/dialog_filedialog_exit_normal.png);
+border-image: url(:/picture_desktop/dialogicon/picture_desktop/icon/dialog_filedialog_exit_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="textEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>452</y>
+     <width>290</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NoteClass</class>
+ <widget class="QDialog" name="NoteClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>undefine</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tools.qrc">
+    <normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QTextEdit" name="textEdit_main">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit QScrollBar::vertical {margin: 9px 0px 9px 0px;border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png); border: 0px; width: 9px;}
+QTextEdit QScrollBar::handle:vertical {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);min-height:15px;}
+QTextEdit QScrollBar::handle:vertical:pressed {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QTextEdit QScrollBar::add-page:vertical {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);}
+QTextEdit QScrollBar::sub-page:vertical {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);}
+QTextEdit QScrollBar::sub-line:vertical {subcontrol-origin: margin; border: 0px solid black; height:9px}
+QTextEdit QScrollBar::add-line:vertical {subcontrol-origin: margin; border: 0px solid black; height:9px}
+QTextEdit QScrollBar::down-arrow:vertical { image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png); }
+QTextEdit QScrollBar::up-arrow:vertical { image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png); }
+QTextEdit QScrollBar::horizontal {margin: 0px 9px 0px 9px;border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png); border: 0px; height: 9px;}
+QTextEdit QScrollBar::handle:horizontal {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);min-width:15px;}
+QTableWidget QScrollBar::handle:horizontal:pressed {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png); }
+QTableWidget QScrollBar::add-page:horizontal {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);}
+QTableWidget QScrollBar::sub-page:horizontal {border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png); }
+QTextEdit QScrollBar::add-line:horizontal {subcontrol-origin: margin; border: 0px solid black; width:9px}
+QTextEdit QScrollBar::sub-line:horizontal {subcontrol-origin: margin; border: 0px solid black; width:9px}
+QTextEdit QScrollBar::left-arrow:horizontal { image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png); }
+QTableWidget QScrollBar::right-arrow:horizontal {image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png); }</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

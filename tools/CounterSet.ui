@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CounterSetClass</class>
+ <widget class="QDialog" name="CounterSetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>计时器设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tools.qrc">
+    <normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QRadioButton" name="radioButton_type_1">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>115</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_type_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>147</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_voice_1">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>303</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_voice_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>335</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_voice_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>367</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_voice_2">
+   <property name="geometry">
+    <rect>
+     <x>227</x>
+     <y>303</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_voice_4">
+   <property name="geometry">
+    <rect>
+     <x>227</x>
+     <y>335</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_hour">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>225</y>
+     <width>40</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_minute">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>225</y>
+     <width>40</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_second">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>225</y>
+     <width>40</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_dialog_1">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>450</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_dialog_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>482</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{spacing: 5px;color: white;}
+QRadioButton::indicator {width: 20px;height: 20px;}
+QRadioButton::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QRadioButton::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QRadioButton::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

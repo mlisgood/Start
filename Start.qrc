@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/icon/main">
+        <file>picture_start/icon/icon_main_mainwindow.png</file>
+    </qresource>
+    <qresource prefix="/icon/managebutton">
+        <file>picture_start/icon/window_close.png</file>
+        <file>picture_start/icon/window_hide.png</file>
+    </qresource>
+    <qresource prefix="/icon/item">
+        <file>picture_start/icon/window_main_notepad_normal.png</file>
+        <file>picture_start/icon/window_main_notepad_pressed.png</file>
+        <file>picture_start/icon/dialog_main_exit_normal.png</file>
+        <file>picture_start/icon/dialog_main_exit_pressed.png</file>
+    </qresource>
+    <qresource prefix="/picture_start/dialogicon">
+        <file>picture_start/icon/dialog_filedialog_exit_normal.png</file>
+        <file>picture_start/icon/dialog_filedialog_exit_pressed.png</file>
+        <file>picture_start/icon/dialog_filedialog_open_normal.png</file>
+        <file>picture_start/icon/dialog_filedialog_open_pressed.png</file>
+    </qresource>
+</RCC>

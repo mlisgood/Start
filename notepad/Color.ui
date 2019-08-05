@@ -1,0 +1,1942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorClass</class>
+ <widget class="QDialog" name="ColorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>颜色设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Notepad.qrc">
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>300</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_1">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>250</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>310</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>80</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Notepad.qrc">:/picture_notepad/color/picture_notepad/color_style/right_style.png</pixmap>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>80</y>
+     <width>40</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+    background: rgb(255,255,255,0);
+    border:2px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_accept">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>350</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_accept_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_accept_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>385</x>
+     <y>350</y>
+     <width>75</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_exit_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_exit_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_remove">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>275</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_remove_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_remove_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>245</y>
+     <width>75</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_add_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_add_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,128,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_2">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,128);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,255,128);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,255,128);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,255,255);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,128,255);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,128,192);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>80</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,128,255);
+    border:1px solid rgb(128,76,71);
+}pushButton_color_1</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,0,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_10">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_11">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_12">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,255,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_13">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_14">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,128,192);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_15">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,128,192);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_16">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>105</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,0,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_17">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,64,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_18">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,128,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_19">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_20">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,128,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_21">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,64,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_22">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,128,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_23">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,0,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_24">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>130</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,0,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_25">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,0,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_26">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,128,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_27">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,128,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_28">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,128,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_29">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,0,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_30">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,0,160);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_31">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,0,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_32">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>155</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,0,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_33">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(64,0,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_34">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,64,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_35">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,64,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_36">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,64,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_37">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,0,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_38">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,0,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_39">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(64,0,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_40">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>180</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(64,0,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_41">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(0,0,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_42">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,128,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_43">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,128,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_44">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(128,128,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_45">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(64,128,128);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_46">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(192,192,192);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_47">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(64,64,64);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_color_48">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>205</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_2">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>265</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_10">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_11">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_12">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_13">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_14">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_15">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_16">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>290</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_17">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_18">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_19">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_20">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_21">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_22">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_23">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_self_24">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>315</y>
+     <width>25</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_select">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>305</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_select_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_color_select_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="verticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>80</y>
+     <width>19</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #FDEAD3;
+}
+QSlider::groove:vertical
+{  
+    background: #FDEAD3;  
+    width: 6px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:vertical
+{  
+    background: #FDEAD3;  
+    border-radius: 2px;  
+} 
+QSlider::add-page:vertical
+{  
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1, stop: 0 #FDEAD3, stop: 1 #FDEAD3);  
+    width: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:vertical   
+{     
+    border-image: url(:/picture_notepad/slider/picture_notepad/slider_style/handle.png);
+    margin: 1px -7px 1px -7px; 
+    height: 20px;
+} </string>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>145</number>
+   </property>
+   <property name="singleStep">
+    <number>1</number>
+   </property>
+   <property name="value">
+    <number>73</number>
+   </property>
+   <property name="sliderPosition">
+    <number>73</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>true</bool>
+   </property>
+   <property name="invertedControls">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3_extra">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>80</y>
+     <width>40</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Notepad.qrc">:/picture_notepad/color/picture_notepad/color_style/right_style_extra.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_label_3_extra">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>80</y>
+     <width>40</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections/>
+</ui>

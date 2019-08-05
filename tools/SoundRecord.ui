@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SoundRecordClass</class>
+ <widget class="QDialog" name="SoundRecordClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>140</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>undefined</string>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_new">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>55</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>99</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

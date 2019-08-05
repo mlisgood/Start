@@ -1,0 +1,109 @@
+<RCC>
+    <qresource prefix="/icon/mainicon">
+        <file>picture_notepad/icon/icon_main_mainwindow.png</file>
+    </qresource>
+    <qresource prefix="/icon/manage">
+        <file>picture_notepad/icon/window_close.png</file>
+        <file>picture_notepad/icon/window_hide.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/scrollbar">
+        <file>picture_notepad/scrollbar_style/down.png</file>
+        <file>picture_notepad/scrollbar_style/up.png</file>
+        <file>picture_notepad/scrollbar_style/left.png</file>
+        <file>picture_notepad/scrollbar_style/right.png</file>
+        <file>picture_notepad/scrollbar_style/line_horizental.png</file>
+        <file>picture_notepad/scrollbar_style/line_vertical.png</file>
+        <file>picture_notepad/scrollbar_style/button_horizental.png</file>
+        <file>picture_notepad/scrollbar_style/button_vertical.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/toolicon">
+        <file>picture_notepad/icon/tool_01.png</file>
+        <file>picture_notepad/icon/tool_03.png</file>
+        <file>picture_notepad/icon/tool_04.png</file>
+        <file>picture_notepad/icon/tool_02.png</file>
+        <file>picture_notepad/icon/tool_06.png</file>
+        <file>picture_notepad/icon/tool_07.png</file>
+        <file>picture_notepad/icon/tool_08.png</file>
+        <file>picture_notepad/icon/tool_09.png</file>
+        <file>picture_notepad/icon/tool_10.png</file>
+        <file>picture_notepad/icon/tool_11.png</file>
+        <file>picture_notepad/icon/tool_12.png</file>
+        <file>picture_notepad/icon/tool_13.png</file>
+        <file>picture_notepad/icon/tool_14.png</file>
+        <file>picture_notepad/icon/tool_15.png</file>
+        <file>picture_notepad/icon/tool_05_1.png</file>
+        <file>picture_notepad/icon/tool_05_2.png</file>
+        <file>picture_notepad/icon/tool_17.png</file>
+        <file>picture_notepad/icon/tool_18.png</file>
+        <file>picture_notepad/icon/tool_16.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/dialogicon">
+        <file>picture_notepad/icon/dialog_main_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_main_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_1_normal.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_1_pressed.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_2_normal.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_2_pressed.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_3_normal.png</file>
+        <file>picture_notepad/icon/dialog_save_choice_3_pressed.png</file>
+        <file>picture_notepad/icon/dialog_find_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_find_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_find_last_normal.png</file>
+        <file>picture_notepad/icon/dialog_find_last_pressed.png</file>
+        <file>picture_notepad/icon/dialog_find_next_normal.png</file>
+        <file>picture_notepad/icon/dialog_find_next_pressed.png</file>
+        <file>picture_notepad/icon/dialog_find_all_normal.png</file>
+        <file>picture_notepad/icon/dialog_find_all_pressed.png</file>
+        <file>picture_notepad/icon/dialog_font_accept_pressed.png</file>
+        <file>picture_notepad/icon/dialog_font_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_font_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_font_accept_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_accept_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_accept_pressed.png</file>
+        <file>picture_notepad/icon/dialog_color_add_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_add_pressed.png</file>
+        <file>picture_notepad/icon/dialog_color_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_color_remove_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_remove_pressed.png</file>
+        <file>picture_notepad/icon/dialog_color_cancel_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_cancel_pressed.png</file>
+        <file>picture_notepad/icon/dialog_color_select_normal.png</file>
+        <file>picture_notepad/icon/dialog_color_select_pressed.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_open_normal.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_open_pressed.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_save_normal.png</file>
+        <file>picture_notepad/icon/dialog_filedialog_save_pressed.png</file>
+        <file>picture_notepad/icon/dialog_code_accept_normal.png</file>
+        <file>picture_notepad/icon/dialog_code_accept_pressed.png</file>
+        <file>picture_notepad/icon/dialog_code_exit_normal.png</file>
+        <file>picture_notepad/icon/dialog_code_exit_pressed.png</file>
+        <file>picture_notepad/icon/dialog_setting_add_item.png</file>
+        <file>picture_notepad/icon/dialog_setting_remove_all_item.png</file>
+        <file>picture_notepad/icon/dialog_setting_remove_item.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/checkbox">
+        <file>picture_notepad/checkbox_style/checkbox_off.png</file>
+        <file>picture_notepad/checkbox_style/checkbox_on.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/combobox">
+        <file>picture_notepad/combobox_style/arrow.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/spinbox">
+        <file>picture_notepad/spinbox_style/down_button.png</file>
+        <file>picture_notepad/spinbox_style/up_button.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/slider">
+        <file>picture_notepad/slider_style/handle.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/color">
+        <file>picture_notepad/color_style/right_style.png</file>
+        <file>picture_notepad/color_style/right_style_extra.png</file>
+    </qresource>
+    <qresource prefix="/picture_notepad/treeview">
+        <file>picture_notepad/treeview_style/down_branch.png</file>
+        <file>picture_notepad/treeview_style/up_branch.png</file>
+    </qresource>
+</RCC>

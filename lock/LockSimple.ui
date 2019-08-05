@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockSimpleClass</class>
+ <widget class="QDialog" name="LockSimpleClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>简单加密</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>440</width>
+     <height>325</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="pushButton_select_1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_normal_1.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_pressed_1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_select_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_normal_2.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_pressed_2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_select_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_normal_3.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/botton_simple_lock_pressed_3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

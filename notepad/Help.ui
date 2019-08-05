@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpClass</class>
+ <widget class="QDialog" name="HelpClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>关于我</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Notepad.qrc">
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close_dialog">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_main_exit_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_main_exit_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections/>
+</ui>

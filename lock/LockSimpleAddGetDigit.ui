@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockSimpleAddGetDigitClass</class>
+ <widget class="QDialog" name="LockSimpleAddGetDigitClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>加减数量设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>345</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_10.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_10.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>345</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_11.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_11.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>141</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QListWidget::Item:hover
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected:!active
+{
+    background:#C0FDEAD3;
+}
+/*滚动条*/
+QListWidget QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png); 
+    border: 0px;
+    width: 15px;
+}
+QListWidget QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QListWidget QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+}
+QListWidget QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QListWidget QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QListWidget QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png); 
+    border: 0px; 
+    height: 15px;
+}
+QListWidget QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTreeView QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="batchSize">
+    <number>16</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_1">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>222</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/up_button_no_background.png);     
+    background: #00FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/down_button_no_background.png); 
+    background: #00FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/up_button_no_background.png);   
+    background: #00FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/down_button_no_background.png); 
+    background: #00FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #00FFFFFF;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>-2147483647</number>
+   </property>
+   <property name="maximum">
+    <number>2147483647</number>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>255</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/dialog_setting_remove_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>255</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/dialog_setting_add_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>255</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/dialog_setting_remove_all_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>255</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/dialog_setting_edit_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>306</x>
+     <y>102</y>
+     <width>65</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/up_button_no_background.png);     
+    background: #00FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/down_button_no_background.png); 
+    background: #00FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/up_button_no_background.png);   
+    background: #00FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_lock/spinbox/picture_lock/spinbox_style/down_button_no_background.png); 
+    background: #00FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #00FFFFFF;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>16</number>
+   </property>
+   <property name="value">
+    <number>16</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

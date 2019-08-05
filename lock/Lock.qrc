@@ -1,0 +1,104 @@
+<RCC>
+    <qresource prefix="/icon/mainicon">
+        <file>picture_lock/icon/icon_main_mainwindow.png</file>
+        <file>picture_lock/icon/window_close.png</file>
+        <file>picture_lock/icon/window_hide.png</file>
+        <file>picture_lock/icon/botton_main_normal_1.png</file>
+        <file>picture_lock/icon/botton_main_normal_2.png</file>
+        <file>picture_lock/icon/botton_main_normal_3.png</file>
+        <file>picture_lock/icon/botton_main_pressed_1.png</file>
+        <file>picture_lock/icon/botton_main_pressed_2.png</file>
+        <file>picture_lock/icon/botton_main_pressed_3.png</file>
+        <file>picture_lock/icon/dialog_main_exit_normal.png</file>
+        <file>picture_lock/icon/dialog_main_exit_pressed.png</file>
+        <file>picture_lock/icon/botton_simple_lock_normal_1.png</file>
+        <file>picture_lock/icon/botton_simple_lock_normal_2.png</file>
+        <file>picture_lock/icon/botton_simple_lock_normal_3.png</file>
+        <file>picture_lock/icon/botton_simple_lock_pressed_1.png</file>
+        <file>picture_lock/icon/botton_simple_lock_pressed_2.png</file>
+        <file>picture_lock/icon/botton_simple_lock_pressed_3.png</file>
+        <file>picture_lock/icon/lock_button_normal_1.png</file>
+        <file>picture_lock/icon/lock_button_normal_2.png</file>
+        <file>picture_lock/icon/lock_button_normal_3.png</file>
+        <file>picture_lock/icon/lock_button_pressed_1.png</file>
+        <file>picture_lock/icon/lock_button_pressed_2.png</file>
+        <file>picture_lock/icon/lock_button_pressed_3.png</file>
+        <file>picture_lock/icon/lock_button_normal_5.png</file>
+        <file>picture_lock/icon/lock_button_normal_6.png</file>
+        <file>picture_lock/icon/lock_button_pressed_5.png</file>
+        <file>picture_lock/icon/lock_button_pressed_6.png</file>
+        <file>picture_lock/icon/lock_button_normal_4.png</file>
+        <file>picture_lock/icon/lock_button_pressed_4.png</file>
+        <file>picture_lock/icon/lock_button_normal_7.png</file>
+        <file>picture_lock/icon/lock_button_normal_8.png</file>
+        <file>picture_lock/icon/lock_button_normal_9.png</file>
+        <file>picture_lock/icon/lock_button_pressed_7.png</file>
+        <file>picture_lock/icon/lock_button_pressed_8.png</file>
+        <file>picture_lock/icon/lock_button_pressed_9.png</file>
+        <file>picture_lock/icon/lock_button_normal_10.png</file>
+        <file>picture_lock/icon/lock_button_normal_11.png</file>
+        <file>picture_lock/icon/lock_button_pressed_10.png</file>
+        <file>picture_lock/icon/lock_button_pressed_11.png</file>
+        <file>picture_lock/icon/dialog_file_path_select.png</file>
+        <file>picture_lock/icon/window_setting.png</file>
+        <file>picture_lock/icon/lock_button_normal_12.png</file>
+        <file>picture_lock/icon/lock_button_pressed_12.png</file>
+        <file>picture_lock/icon/dialog_setting_add_item.png</file>
+        <file>picture_lock/icon/dialog_setting_remove_all_item.png</file>
+        <file>picture_lock/icon/dialog_setting_remove_item.png</file>
+        <file>picture_lock/icon/dialog_setting_edit_item.png</file>
+        <file>picture_lock/icon/lock_button_normal_13.png</file>
+        <file>picture_lock/icon/lock_button_pressed_13.png</file>
+        <file>picture_lock/icon/lock_button_normal_14.png</file>
+        <file>picture_lock/icon/lock_button_pressed_14.png</file>
+        <file>picture_lock/icon/lock_button_normal_15.png</file>
+        <file>picture_lock/icon/lock_button_pressed_15.png</file>
+        <file>picture_lock/icon/lock_button_normal_16.png</file>
+        <file>picture_lock/icon/lock_button_normal_17.png</file>
+        <file>picture_lock/icon/lock_button_pressed_16.png</file>
+        <file>picture_lock/icon/lock_button_pressed_17.png</file>
+        <file>picture_lock/icon/lock_button_normal_18.png</file>
+        <file>picture_lock/icon/lock_button_normal_19.png</file>
+        <file>picture_lock/icon/lock_button_normal_20.png</file>
+        <file>picture_lock/icon/lock_button_pressed_18.png</file>
+        <file>picture_lock/icon/lock_button_pressed_19.png</file>
+        <file>picture_lock/icon/lock_button_pressed_20.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/spinbox">
+        <file>picture_lock/spinbox_style/down_button.png</file>
+        <file>picture_lock/spinbox_style/up_button.png</file>
+        <file>picture_lock/spinbox_style/down_button_no_background.png</file>
+        <file>picture_lock/spinbox_style/up_button_no_background.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/checkbox">
+        <file>picture_lock/checkbox_style/checkbox_off.png</file>
+        <file>picture_lock/checkbox_style/checkbox_on.png</file>
+        <file>picture_lock/checkbox_style/checkbox_off_small.png</file>
+        <file>picture_lock/checkbox_style/checkbox_on_small.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/treeview">
+        <file>picture_lock/treeview_style/down_branch.png</file>
+        <file>picture_lock/treeview_style/up_branch.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/scrollbar">
+        <file>picture_lock/scrollbar_style/button_horizental.png</file>
+        <file>picture_lock/scrollbar_style/button_vertical.png</file>
+        <file>picture_lock/scrollbar_style/down.png</file>
+        <file>picture_lock/scrollbar_style/left.png</file>
+        <file>picture_lock/scrollbar_style/line_horizental.png</file>
+        <file>picture_lock/scrollbar_style/line_vertical.png</file>
+        <file>picture_lock/scrollbar_style/right.png</file>
+        <file>picture_lock/scrollbar_style/up.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/dialogicon">
+        <file>picture_lock/icon/dialog_filedialog_exit_normal.png</file>
+        <file>picture_lock/icon/dialog_filedialog_exit_pressed.png</file>
+        <file>picture_lock/icon/dialog_filedialog_open_normal.png</file>
+        <file>picture_lock/icon/dialog_filedialog_open_pressed.png</file>
+        <file>picture_lock/icon/dialog_filedialog_save_normal.png</file>
+        <file>picture_lock/icon/dialog_filedialog_save_pressed.png</file>
+    </qresource>
+    <qresource prefix="/picture_lock/combobox">
+        <file>picture_lock/combobox_style/arrow.png</file>
+    </qresource>
+</RCC>

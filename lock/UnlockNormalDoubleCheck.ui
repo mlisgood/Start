@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnlockNormalDoubleCheckClass</class>
+ <widget class="QDialog" name="UnlockNormalDoubleCheckClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>解密信息</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_import">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>150</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_14.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_14.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>150</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_5.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_5.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>243</x>
+     <y>150</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_6.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_6.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_show_1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>66</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71,0);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_show_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>95</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71,0);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_show_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>124</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71,0);
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

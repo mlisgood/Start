@@ -1,0 +1,8 @@
+LIBRARY FileReadAndWrite
+
+EXPORTS
+
+file_read_text
+file_write_text
+file_read_binary
+file_write_binary

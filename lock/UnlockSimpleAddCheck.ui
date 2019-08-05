@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnlockSimpleAddCheckClass</class>
+ <widget class="QDialog" name="UnlockSimpleAddCheckClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>解密信息</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QLabel" name="label_show_1">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>84</y>
+     <width>190</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_show_2">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>126</y>
+     <width>190</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_show_3">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>167</y>
+     <width>190</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_show_4">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>208</y>
+     <width>190</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_show_5">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>249</y>
+     <width>190</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_import">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>300</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_4.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_4.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>345</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_5.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_5.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>345</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_6.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_6.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_look">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>300</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_13.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_13.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

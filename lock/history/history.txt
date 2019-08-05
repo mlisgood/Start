@@ -1,0 +1,165 @@
+time:2018-12-9 18:0:55
+name:无标题.png
+path:D:\无标题.png
+operation:lock
+
+time:2018-12-9 18:1:38
+name:无标题.png.lock
+path:D:\code\Start\lock\target_lock\无标题.png.lock
+operation:unlock
+
+time:2018-12-9 20:38:36
+name:无标题.png.key.txt
+path:D:\code\Start\lock\target_lock\无标题.png.key.txt
+operation:unlock
+
+time:2018-12-9 20:42:46
+name:File.cpp
+path:D:\code\Start\lock\File.cpp
+operation:lock
+
+time:2018-12-9 20:43:35
+name:游戏资料.rar
+path:D:\游戏资料.rar
+operation:lock
+
+time:2018-12-9 20:44:56
+name:游戏资料.rar.lock
+path:D:\code\Start\lock\target_lock\游戏资料.rar.lock
+operation:unlock
+
+time:2018-12-9 20:59:39
+name:1.psd
+path:D:\1.psd
+operation:lock
+
+time:2018-12-9 21:0:49
+name:游戏资料.rar
+path:D:\游戏资料.rar
+operation:lock
+
+time:2018-12-9 21:2:4
+name:游戏资料.rar.lock
+path:D:\code\Start\lock\target_lock\游戏资料.rar.lock
+operation:unlock
+
+time:2018-12-15 11:28:14
+name:Get.ui
+path:D:\code\Start\lock\Get.ui
+operation:lock
+
+time:2018-12-15 11:30:23
+name:i wanna be totemo kandan desu.exe
+path:D:\i wanna be totemo kandan desu.exe
+operation:lock
+
+time:2018-12-15 11:31:19
+name:Lock.qrc
+path:D:\code\Start\lock\Lock.qrc
+operation:lock
+
+time:2018-12-15 11:31:21
+name:i wanna be totemo kandan desu.exe
+path:D:\i wanna be totemo kandan desu.exe
+operation:lock
+
+time:2018-12-15 11:31:25
+name:rem1(マヤ).avi
+path:D:\rem1(マヤ).avi
+operation:lock
+
+time:2018-12-15 11:32:7
+name:Lock.cpp
+path:D:\code\Start\lock\Lock.cpp
+operation:lock
+
+time:2018-12-15 11:38:57
+name:Lock.sln
+path:D:\code\Start\lock\Lock.sln
+operation:lock
+
+time:2018-12-15 11:40:7
+name:Lock.ui
+path:D:\code\Start\lock\Lock.ui
+operation:lock
+
+time:2018-12-15 11:41:34
+name:Lock.aps
+path:D:\code\Start\lock\Lock.aps
+operation:lock
+
+time:2018-12-15 11:43:16
+name:Lock.rc
+path:D:\code\Start\lock\Lock.rc
+operation:lock
+
+time:2018-12-15 11:44:5
+name:dialog.psd
+path:D:\爆炸\dialog.psd
+operation:lock
+
+time:2018-12-15 11:44:9
+name:i wanna be totemo kandan desu.exe
+path:D:\i wanna be totemo kandan desu.exe
+operation:lock
+
+time:2018-12-15 11:44:22
+name:rem1(マヤ).avi
+path:D:\rem1(マヤ).avi
+operation:lock
+
+time:2018-12-15 11:44:29
+name:软工作业.docx
+path:D:\大学资料\软工作业.docx
+operation:lock
+
+time:2018-12-15 11:44:48
+name:dialog.psd.lock
+path:D:\code\Start\lock\target_lock\dialog.psd.lock
+operation:unlock
+
+time:2018-12-15 11:45:56
+name:i wanna be totemo kandan desu.exe.lock
+path:D:\code\Start\lock\target_lock\i wanna be totemo kandan desu.exe.lock
+operation:unlock
+
+time:2018-12-15 11:46:2
+name:软工作业.docx.lock
+path:D:\code\Start\lock\target_lock\软工作业.docx.lock
+operation:unlock
+
+time:2018-12-15 11:46:9
+name:rem1(マヤ).avi.lock
+path:D:\code\Start\lock\target_lock\rem1(マヤ).avi.lock
+operation:unlock
+
+time:2018-12-19 22:58:51
+name:rem2(メグ).avi
+path:D:\rem2(メグ).avi
+operation:lock
+
+time:2018-12-19 22:59:9
+name:rem2(メグ).avi.lock
+path:D:\code\Start\lock\target_lock\rem2(メグ).avi.lock
+operation:unlock
+
+time:2018-12-19 22:59:15
+name:rem2(メグ).avi.lock
+path:D:\code\Start\lock\target_lock\rem2(メグ).avi.lock
+operation:unlock
+
+time:2018-12-19 23:0:17
+name:rem1(マヤ).avi
+path:D:\rem1(マヤ).avi
+operation:lock
+
+time:2018-12-19 23:1:1
+name:rem1(マヤ).avi.lock
+path:D:\code\Start\lock\target_lock\rem1(マヤ).avi.lock
+operation:unlock
+
+time:2018-12-19 23:1:1
+name:rem1(マヤ).avi.lock
+path:D:\code\Start\lock\target_lock\rem1(マヤ).avi.lock
+operation:unlock
+

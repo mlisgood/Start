@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolsSetExtraClass</class>
+ <widget class="QDialog" name="ToolsSetExtraClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tools.qrc">
+    <normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QSpinBox" name="spinBox_3">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>440</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_4">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>440</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>378</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>「普通」为150*250，「特別」为100*100</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>「普通」为100*167，「特別」为75*75</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>「普通」为75*125，「特別」为50*50</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>「普通」为50*83，「特別」为25*25</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>158</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>150*250</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>100*167</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>75*125</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>50*83</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>102</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>223</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>254</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>3600</number>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>314</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>4</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>（普通）魔法少女　チノ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（普通）ソーサラー　チノ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（普通）ガンナー　マヤ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（普通）バーサーカー　メグ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（特別）ココアとチノ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（特別）ティッピー</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>（特別）なし</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>498</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingClass</class>
+ <widget class="QDialog" name="SettingClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>其他设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Notepad.qrc">
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close_dialog">
+   <property name="geometry">
+    <rect>
+     <x>372</x>
+     <y>350</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_exit_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_exit_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>314</y>
+     <width>107</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>文本方式</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>二进制方式</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_accept_dialog">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>350</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_accept_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_code_accept_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_1">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>64</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>221</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_3">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>253</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_notepad/checkbox/picture_notepad/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_1">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>158</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>256</number>
+   </property>
+   <property name="value">
+    <number>32</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>190</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_notepad/spinbox/picture_notepad/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>64</number>
+   </property>
+   <property name="value">
+    <number>32</number>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>100</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QListWidget::Item:hover
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected:!active
+{
+    background:#C0FDEAD3;
+}
+/*滚动条*/
+QListWidget QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png); 
+    border: 0px;
+    width: 15px;
+}
+QListWidget QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QListWidget QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+}
+QListWidget QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/down.png);
+}
+QListWidget QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/up.png);
+}
+QListWidget QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_horizental.png); 
+    border: 0px; 
+    height: 15px;
+}
+QListWidget QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/left.png);
+}
+QTreeView QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/right.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>90</y>
+     <width>100</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QListWidget::Item:hover
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected
+{
+    background:#C0FDEAD3;
+}
+QListWidget::item:selected:!active
+{
+    background:#C0FDEAD3;
+}
+/*滚动条*/
+QListWidget QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png); 
+    border: 0px;
+    width: 15px;
+}
+QListWidget QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QListWidget QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+}
+QListWidget QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QListWidget QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:15px
+}
+QListWidget QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/down.png);
+}
+QListWidget QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/up.png);
+}
+QListWidget QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_horizental.png); 
+    border: 0px; 
+    height: 15px;
+}
+QListWidget QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTreeView QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTreeView QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/left.png);
+}
+QTreeView QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/right.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="maxLength">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>260</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background:rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="maxLength">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_add_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_2">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_remove_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_3">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_remove_all_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_4">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_add_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_5">
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_remove_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_list_6">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>290</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_setting_remove_all_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections/>
+</ui>

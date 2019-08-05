@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockNormalDoubleKeyClass</class>
+ <widget class="QDialog" name="LockNormalDoubleKeyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>非对称加密</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QLabel" name="label_chara_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_chara_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_margin">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>picture_lock/lock_margin/margin.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_1">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>560</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_1.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>560</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_2.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>243</x>
+     <y>560</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_3.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>picture_lock/lock_normal_double_background/background_1.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>474</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="maxLength">
+    <number>32767</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_1">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>445</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="maxLength">
+    <number>32767</number>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>503</y>
+     <width>56</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>503</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_lock/checkbox/picture_lock/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>416</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #00FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #F8F5E2;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>RSA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ECC</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>532</y>
+     <width>128</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #00FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #F8F5E2;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>1024</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1536</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2048</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2560</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3072</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3584</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4096</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4608</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5120</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5632</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6144</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>527</y>
+     <width>92</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_15.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_15.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_background</zorder>
+  <zorder>label_chara_2</zorder>
+  <zorder>label_chara_1</zorder>
+  <zorder>label_margin</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>pushButton_1</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>lineEdit_1</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>checkBox</zorder>
+  <zorder>comboBox_1</zorder>
+  <zorder>comboBox_2</zorder>
+  <zorder>pushButton_4</zorder>
+ </widget>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SoundRecordSetClass</class>
+ <widget class="QDialog" name="SoundRecordSetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tools.qrc">
+    <normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>335</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>335</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>114</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>mono</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>stereo</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>286</y>
+     <width>35</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>289</y>
+     <width>280</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

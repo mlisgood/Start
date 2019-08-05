@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingOtherClass</class>
+ <widget class="QDialog" name="SettingOtherClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="desktop.qrc">
+    <normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>174</x>
+     <y>245</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>245</y>
+     <width>35</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_1">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>96</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>152</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_desktop/checkbox/picture_desktop/checkbox_style/checkbox_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_main_1">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>177</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>3600</number>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_main_2">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>205</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>

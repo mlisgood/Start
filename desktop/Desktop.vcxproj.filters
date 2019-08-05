@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Help.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingDynamic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingOther.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Desktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Setting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SettingDynamic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="File.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Help.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Desktop.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Widget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Setting.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingDynamic.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SettingOther.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{e12589c7-d2a1-456f-974b-a6ee9d6fd6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{b7249d12-6bea-42d0-8a92-46fe7418cc8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Help.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="File.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Desktop.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Widget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Setting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingDynamic.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingOther.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="desktop.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Desktop.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="picture_desktop\icon\icon_main_group.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DesktopOmakeClass</class>
+ <widget class="QMainWindow" name="DesktopOmakeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>PictureWatch</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="DesktopOmake.qrc">
+    <normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_picture">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>73</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QLabel
+{
+    border: 1px solid #00E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>73</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QScrollArea
+{
+    border: 1px solid #E872A2;
+    background-color:transparent;
+}
+/*滚动条*/
+QScrollArea QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png); 
+    border: 0px; 
+    width: 9px;
+}
+QScrollArea QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QScrollArea QScrollBar::handle:vertical:pressed
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_vertical.png);
+}
+QScrollArea QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png);
+}
+QScrollArea QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_vertical.png);
+}
+QScrollArea QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin; border: 0px solid black; 
+    height:9px
+}
+QScrollArea QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height: 9px
+}
+QScrollArea QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/down.png);
+}
+QScrollArea QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/up.png);
+}
+QScrollArea QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_horizental.png); 
+    border: 0px;
+    height: 9px;
+}
+QScrollArea QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QScrollArea QScrollBar::handle:horizontal:pressed 
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/button_horizental.png);
+}
+QScrollArea QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_horizental.png);
+}
+QScrollArea QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/line_horizental.png);
+}
+QScrollArea QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QScrollArea QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QScrollArea QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/left.png);
+}
+QScrollArea QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_desktop/scrollbar/picture_desktop/scrollbar_style/right.png);
+}</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>478</width>
+       <height>478</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSlider" name="slider_rotate">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>103</y>
+      <width>20</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #E872A2;
+}
+QSlider::groove:vertical 
+{  
+    background: #E872A2;  
+    width: 4px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:vertical
+{  
+    background: #E872A2;  
+    border-radius: 2px;  
+}
+QSlider::add-page:vertical
+{  
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0.2, y1: 0, x2: 1, y2: 1, stop: 0 #E872A2, stop: 1 #E872A2);  
+    width: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:vertical
+{     
+    border-image: url(:/picture_desktop/slider/picture_desktop/slider_style/handle.png);
+    margin: 1px -7px 1px -7px; 
+    height: 20px;
+} </string>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_resize">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>103</y>
+      <width>20</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #E872A2;
+}
+QSlider::groove:vertical 
+{  
+    background: #E872A2;  
+    width: 4px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:vertical
+{  
+    background: #E872A2;  
+    border-radius: 2px;  
+}
+QSlider::add-page:vertical
+{  
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0.2, y1: 0, x2: 1, y2: 1, stop: 0 #E872A2, stop: 1 #E872A2);  
+    width: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:vertical
+{     
+    border-image: url(:/picture_desktop/slider/picture_desktop/slider_style/handle.png);
+    margin: 1px -7px 1px -7px; 
+    height: 20px;
+} </string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1600</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_bg_r">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>566</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #E872A2;
+}
+QSlider::groove:horizontal 
+{  
+    background: #E872A2;  
+    height: 4px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:horizontal
+{  
+    background: #E872A2;  
+    border-radius: 2px;  
+}
+QSlider::add-page:horizontal
+{  
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0.2, y1: 0, x2: 1, y2: 1, stop: 0 #E872A2, stop: 1 #E872A2);  
+    height: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:horizontal
+{     
+    border-image: url(:/picture_desktop/slider/picture_desktop/slider_style/handle.png);
+    margin: -7px 1px -7px 1px; 
+    width: 20px;
+} </string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>0</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_bg_g">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>566</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #E872A2;
+}
+QSlider::groove:horizontal 
+{  
+    background: #E872A2;  
+    height: 4px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:horizontal
+{  
+    background: #E872A2;  
+    border-radius: 2px;  
+}
+QSlider::add-page:horizontal
+{  
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0.2, y1: 0, x2: 1, y2: 1, stop: 0 #E872A2, stop: 1 #E872A2);  
+    height: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:horizontal
+{     
+    border-image: url(:/picture_desktop/slider/picture_desktop/slider_style/handle.png);
+    margin: -7px 1px -7px 1px; 
+    width: 20px;
+} </string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_bg_b">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>566</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QSlider
+{
+    border-color: #E872A2;
+}
+QSlider::groove:horizontal 
+{  
+    background: #E872A2;  
+    height: 4px;  
+    border-radius: 1px;  
+    padding-left:-1px;  
+    padding-right:-1px;  
+    padding-top:-1px;  
+    padding-bottom:-1px;  
+} 
+QSlider::sub-page:horizontal
+{  
+    background: #E872A2;  
+    border-radius: 2px;  
+}
+QSlider::add-page:horizontal
+{  
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #439cf4, stop:1 #439cf4);  
+    background: qlineargradient(x1: 0.2, y1: 0, x2: 1, y2: 1, stop: 0 #E872A2, stop: 1 #E872A2);  
+    height: 10px;  
+    border-radius: 2px;  
+}
+QSlider::handle:horizontal
+{     
+    border-image: url(:/picture_desktop/slider/picture_desktop/slider_style/handle.png);
+    margin: -7px 1px -7px 1px; 
+    width: 20px;
+} </string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_background">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>73</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*总体设置*/
+QLabel
+{
+    border: 1px solid #00E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>0</y>
+      <width>480</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/Administrator/Desktop/word.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cocoa_1">
+    <property name="geometry">
+     <rect>
+      <x>911</x>
+      <y>31</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_desktop/icon/picture_desktop/icon/dialog_arrow.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_file_path">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>31</y>
+      <width>410</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_1">
+    <property name="geometry">
+     <rect>
+      <x>501</x>
+      <y>54</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1600</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>607</x>
+      <y>54</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="minimum">
+     <number>-180</number>
+    </property>
+    <property name="maximum">
+     <number>180</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_3">
+    <property name="geometry">
+     <rect>
+      <x>791</x>
+      <y>54</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>54</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>889</x>
+      <y>54</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;  
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/up_button.png);   
+    background: #00FFFFFF;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_desktop/spinbox/picture_desktop/spinbox_style/down_button.png); 
+    background: #00FFFFFF;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #E872A2;
+    background: #00FFFFFF;
+}</string>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+   </widget>
+   <zorder>label_background</zorder>
+   <zorder>label_picture</zorder>
+   <zorder>scrollArea</zorder>
+   <zorder>slider_rotate</zorder>
+   <zorder>slider_resize</zorder>
+   <zorder>slider_bg_r</zorder>
+   <zorder>slider_bg_g</zorder>
+   <zorder>slider_bg_b</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton_cocoa_1</zorder>
+   <zorder>label_file_path</zorder>
+   <zorder>spinBox_1</zorder>
+   <zorder>spinBox_2</zorder>
+   <zorder>spinBox_3</zorder>
+   <zorder>spinBox_4</zorder>
+   <zorder>spinBox_5</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="DesktopOmake.qrc"/>
+ </resources>
+ <connections/>
+</ui>

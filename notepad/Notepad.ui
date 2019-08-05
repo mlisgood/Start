@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NotepadClass</class>
+ <widget class="QMainWindow" name="NotepadClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>未命名 - 一緒にモフモフしよー</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_hide_windows">
+    <property name="geometry">
+     <rect>
+      <x>885</x>
+      <y>15</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_hide.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close_windows">
+    <property name="geometry">
+     <rect>
+      <x>925</x>
+      <y>15</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_main">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>105</y>
+      <width>450</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png); 
+    border: 0px; 
+    width: 15px;
+}
+QTextEdit QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QTextEdit QScrollBar::handle:vertical:pressed
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_vertical.png);
+}
+QTextEdit QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QTextEdit QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_vertical.png);
+}
+QTextEdit QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin; border: 0px solid black; 
+    height:15px
+}
+QTextEdit QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height: 15px
+}
+QTextEdit QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/down.png);
+}
+QTextEdit QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/up.png);
+}
+QTextEdit QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_horizental.png); 
+    border: 0px;
+    height: 15px;
+}
+QTextEdit QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTextEdit QScrollBar::handle:horizontal:pressed 
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/button_horizental.png);
+}
+QTextEdit QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_horizental.png);
+}
+QTextEdit QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/line_horizental.png);
+}
+QTextEdit QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTextEdit QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTextEdit QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/left.png);
+}
+QTextEdit QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_notepad/scrollbar/picture_notepad/scrollbar_style/right.png);
+}</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_01">
+    <property name="geometry">
+     <rect>
+      <x>476</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_01.png);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_02">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_02.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_03">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_03.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_04">
+    <property name="geometry">
+     <rect>
+      <x>554</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_04.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_05">
+    <property name="geometry">
+     <rect>
+      <x>606</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_05_1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filename">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>20</y>
+      <width>400</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filestatus">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>560</y>
+      <width>200</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_06">
+    <property name="geometry">
+     <rect>
+      <x>632</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_06.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_07">
+    <property name="geometry">
+     <rect>
+      <x>658</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_07.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_09">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_08.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_10">
+    <property name="geometry">
+     <rect>
+      <x>736</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_09.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_08">
+    <property name="geometry">
+     <rect>
+      <x>684</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_10.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_11">
+    <property name="geometry">
+     <rect>
+      <x>762</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_11.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_12">
+    <property name="geometry">
+     <rect>
+      <x>788</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_12.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_13">
+    <property name="geometry">
+     <rect>
+      <x>814</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_13.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_14">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_14.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_15">
+    <property name="geometry">
+     <rect>
+      <x>866</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_15.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_17">
+    <property name="geometry">
+     <rect>
+      <x>892</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_17.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_code">
+    <property name="geometry">
+     <rect>
+      <x>885</x>
+      <y>560</y>
+      <width>80</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_savestatus">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>560</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_16">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_16.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tool_18">
+    <property name="geometry">
+     <rect>
+      <x>918</x>
+      <y>50</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/picture_notepad/toolicon/picture_notepad/icon/tool_18.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>542</y>
+      <width>470</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar
+{
+   border: 1px solid #804C47;
+   background-color: #00FFFFFF;
+   text-align: center;
+}
+ 
+QProgressBar::chunk
+{
+   background-color: #804C47;
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_file_read_advance">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>542</y>
+      <width>200</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>正在获取文件总字节数信息……</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_hide_windows</sender>
+   <signal>clicked()</signal>
+   <receiver>NotepadClass</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>896</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

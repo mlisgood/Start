@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/picture_tools/icon">
+        <file>picture_tools/icon/window_close.png</file>
+        <file>picture_tools/icon/window_hide.png</file>
+        <file>picture_tools/icon/dialog_main_exit_normal.png</file>
+        <file>picture_tools/icon/dialog_main_exit_pressed.png</file>
+        <file>picture_tools/icon/icon_main_mainwindow.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/radiobutton">
+        <file>picture_tools/radiobutton_style/radiobutton_off.png</file>
+        <file>picture_tools/radiobutton_style/radiobutton_on.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/spinbox">
+        <file>picture_tools/spinbox_style/down_button.png</file>
+        <file>picture_tools/spinbox_style/up_button.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/scrollbar">
+        <file>picture_tools/scrollbar_style/button_horizental.png</file>
+        <file>picture_tools/scrollbar_style/button_vertical.png</file>
+        <file>picture_tools/scrollbar_style/down.png</file>
+        <file>picture_tools/scrollbar_style/left.png</file>
+        <file>picture_tools/scrollbar_style/line_horizental.png</file>
+        <file>picture_tools/scrollbar_style/line_vertical.png</file>
+        <file>picture_tools/scrollbar_style/right.png</file>
+        <file>picture_tools/scrollbar_style/up.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/combobox">
+        <file>picture_tools/combobox_style/arrow.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/dialogicon">
+        <file>picture_tools/icon/dialog_filedialog_exit_normal.png</file>
+        <file>picture_tools/icon/dialog_filedialog_exit_pressed.png</file>
+        <file>picture_tools/icon/dialog_filedialog_open_normal.png</file>
+        <file>picture_tools/icon/dialog_filedialog_open_pressed.png</file>
+    </qresource>
+    <qresource prefix="/picture_tools/treeview">
+        <file>picture_tools/treeview_style/down_branch.png</file>
+        <file>picture_tools/treeview_style/up_branch.png</file>
+    </qresource>
+</RCC>

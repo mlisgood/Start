@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetClass</class>
+ <widget class="QDialog" name="WidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>undefine - widget</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Desktop.qrc">
+    <normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+ </widget>
+ <resources>
+  <include location="Desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DesktopClass</class>
+ <widget class="QMainWindow" name="DesktopClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>一緒にモフモフしよー</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="desktop.qrc">
+    <normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</normaloff>:/picture_desktop/icon/picture_desktop/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>

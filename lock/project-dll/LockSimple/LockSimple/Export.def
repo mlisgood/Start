@@ -1,0 +1,8 @@
+LIBRARY LockSimple
+
+EXPORTS
+
+lock_opposite
+unlock_opposite
+lock_add
+unlock_add

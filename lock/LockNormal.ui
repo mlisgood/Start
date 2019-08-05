@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockNormalClass</class>
+ <widget class="QDialog" name="LockNormalClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>常规加密</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Lock.qrc">
+    <normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_lock/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QPushButton" name="pushButton_select_1">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>350</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_10.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_10.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_select_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>350</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_normal_11.png);
+border-image: url(:/icon/mainicon/picture_lock/icon/lock_button_pressed_11.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="centralWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>picture/lock_normal_dialog/dialog.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #00FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #00FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #00E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_lock/combobox/picture_lock/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #F8F5E2;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="maxVisibleItems">
+     <number>7</number>
+    </property>
+    <property name="maxCount">
+     <number>2147483646</number>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::InsertAtBottom</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>DES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2-Key 3DES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3-Key 3DES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AES-128</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AES-192</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AES-256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RSA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ECC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA-1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA-2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA-3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Keccak</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>300</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit
+{
+    background: rgb(255,255,255,0);
+    border:1px solid rgb(128,76,71);
+}
+QTextEdit QScrollBar::vertical
+{
+    margin: 15px 0px 15px 0px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png); 
+    border: 0px; 
+    width: 15px;
+}
+QTextEdit QScrollBar::handle:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+    min-height:50px;
+}
+QTextEdit QScrollBar::handle:vertical:pressed
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_vertical.png);
+}
+QTextEdit QScrollBar::add-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QTextEdit QScrollBar::sub-page:vertical
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_vertical.png);
+}
+QTextEdit QScrollBar::sub-line:vertical
+{
+    subcontrol-origin: margin; border: 0px solid black; 
+    height:15px
+}
+QTextEdit QScrollBar::add-line:vertical
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height: 15px
+}
+QTextEdit QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/down.png);
+}
+QTextEdit QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/up.png);
+}
+QTextEdit QScrollBar::horizontal
+{
+    margin: 0px 15px 0px 15px;
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png); 
+    border: 0px;
+    height: 15px;
+}
+QTextEdit QScrollBar::handle:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+    min-width:50px;
+}
+QTextEdit QScrollBar::handle:horizontal:pressed 
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/button_horizental.png);
+}
+QTextEdit QScrollBar::add-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png);
+}
+QTextEdit QScrollBar::sub-page:horizontal
+{
+    border-image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/line_horizental.png);
+}
+QTextEdit QScrollBar::add-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTextEdit QScrollBar::sub-line:horizontal
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:15px
+}
+QTextEdit QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/left.png);
+}
+QTextEdit QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_lock/scrollbar/picture_lock/scrollbar_style/right.png);
+}</string>
+    </property>
+    <property name="undoRedoEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <zorder>centralWidget</zorder>
+  <zorder>pushButton_select_1</zorder>
+  <zorder>pushButton_select_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Lock.qrc"/>
+ </resources>
+ <connections/>
+</ui>

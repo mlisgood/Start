@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/picture_desktop/icon">
+        <file>picture_desktop/icon/window_close.png</file>
+        <file>picture_desktop/icon/window_hide.png</file>
+        <file>picture_desktop/icon/icon_main_mainwindow.png</file>
+        <file>picture_desktop/icon/dialog_arrow.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/checkbox">
+        <file>picture_desktop/checkbox_style/checkbox_off.png</file>
+        <file>picture_desktop/checkbox_style/checkbox_on.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/spinbox">
+        <file>picture_desktop/spinbox_style/down_button.png</file>
+        <file>picture_desktop/spinbox_style/up_button.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/scrollbar">
+        <file>picture_desktop/scrollbar_style/button_horizental.png</file>
+        <file>picture_desktop/scrollbar_style/button_vertical.png</file>
+        <file>picture_desktop/scrollbar_style/down.png</file>
+        <file>picture_desktop/scrollbar_style/left.png</file>
+        <file>picture_desktop/scrollbar_style/line_horizental.png</file>
+        <file>picture_desktop/scrollbar_style/line_vertical.png</file>
+        <file>picture_desktop/scrollbar_style/right.png</file>
+        <file>picture_desktop/scrollbar_style/up.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/combobox">
+        <file>picture_desktop/combobox_style/arrow.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/treeview">
+        <file>picture_desktop/treeview_style/down_branch.png</file>
+        <file>picture_desktop/treeview_style/up_branch.png</file>
+    </qresource>
+    <qresource prefix="/picture_desktop/dialogicon">
+        <file>picture_desktop/icon/dialog_filedialog_exit_normal.png</file>
+        <file>picture_desktop/icon/dialog_filedialog_exit_pressed.png</file>
+        <file>picture_desktop/icon/dialog_filedialog_open_normal.png</file>
+        <file>picture_desktop/icon/dialog_filedialog_open_pressed.png</file>
+        <file>picture_desktop/icon/dialog_filedialog_save_normal.png</file>
+        <file>picture_desktop/icon/dialog_filedialog_save_pressed.png</file>
+    </qresource>
+</RCC>

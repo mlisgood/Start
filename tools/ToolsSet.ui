@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolsSetClass</class>
+ <widget class="QDialog" name="ToolsSetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tools.qrc">
+    <normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</normaloff>:/picture_tools/icon/picture_tools/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QSpinBox" name="spinBox_1">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>443</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>443</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*按钮未按下*/
+QSpinBox::up-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);     
+    background: #FDEAD3;
+}
+QSpinBox::down-button
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*按钮按下*/
+QSpinBox::up-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/up_button.png);   
+    background: #FDEAD3;     
+}
+QSpinBox::down-button:pressed
+{
+    image: url(:/picture_tools/spinbox/picture_tools/spinbox_style/down_button.png); 
+    background: #FDEAD3;
+}
+/*总体设置*/
+QSpinBox
+{
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+}</string>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_apply">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>536</y>
+     <width>41</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>158</y>
+     <width>163</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>383</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    border: 1px solid #804C47;
+    border-radius: 0px;
+    padding: 1px 3px 1px 3px;
+    min-width: 6px;
+}
+QComboBox:editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable
+{
+    background: #FDEAD3;
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on
+{
+    background: #FDEAD3;  
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down:!editable
+{
+    background: #E49C97;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #804C47;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow
+{
+    image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox::down-arrow:on
+{ 
+     image: url(:/picture_tools/combobox/picture_tools/combobox_style/arrow.png);
+}
+QComboBox QAbstractItemView  
+{  
+    border: 1px solid #804C47;
+    background: #FDEAD3;
+    selection-background-color: #E49C97;
+    color: #461C0A;  
+    selection-color: #FFFFFF;
+}
+QComboBox QScrollBar::vertical
+{
+    margin: 9px 0px 9px 0px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+    border: 0px; 
+    width: 9px;
+}
+QComboBox QScrollBar::handle:vertical {
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png);
+    min-height:10px;
+}
+QComboBox QScrollBar::handle:vertical:pressed 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_vertical.png); }
+QComboBox QScrollBar::add-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-page:vertical 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_vertical.png);
+}
+QComboBox QScrollBar::sub-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::add-line:vertical 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    height:9px
+}
+QComboBox QScrollBar::down-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/down.png);
+}
+QComboBox QScrollBar::up-arrow:vertical
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/up.png);
+}
+QComboBox QScrollBar::horizontal
+{
+    margin: 0px 9px 0px 9px;
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/line_horizental.png);
+    border: 0px;
+    height: 9px;
+}
+QComboBox QScrollBar::handle:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+    min-width:10px;
+}
+QTableWidget QScrollBar::handle:horizontal:pressed
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::add-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QTableWidget QScrollBar::sub-page:horizontal 
+{
+    border-image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/button_horizental.png);
+}
+QComboBox QScrollBar::add-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::sub-line:horizontal 
+{
+    subcontrol-origin: margin;
+    border: 0px solid black;
+    width:9px
+}
+QComboBox QScrollBar::left-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/left.png);
+}
+QTableWidget QScrollBar::right-arrow:horizontal
+{
+    image: url(:/picture_tools/scrollbar/picture_tools/scrollbar_style/right.png);
+}</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>7</number>
+   </property>
+   <property name="maxCount">
+    <number>2147483646</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>魔法少女　チノ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ソーサラー　チノ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ガンナー　マヤ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>バーサーカー　メグ</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_1">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>159</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>184</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>209</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>234</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_5">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>259</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_6">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>284</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_7">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>309</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_8">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>334</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>183</y>
+     <width>163</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>208</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>233</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>258</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>283</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>308</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_program_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>333</y>
+     <width>163</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+    background: rgb(255,255,255,0);
+    border:0px solid rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>503</y>
+     <width>20</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{spacing: 5px;color: white;}
+QCheckBox::indicator {width: 20px;height: 20px;}
+QCheckBox::indicator:enabled:unchecked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:unchecked:hover  {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:unchecked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_off.png);}
+QCheckBox::indicator:enabled:checked {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QCheckBox::indicator:enabled:checked:hover {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}
+QCheckBox::indicator:enabled:checked:pressed {image: url(:/picture_tools/radiobutton/picture_tools/radiobutton_style/radiobutton_on.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_9">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>159</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_10">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>184</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_11">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>209</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_12">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>234</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_13">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>259</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_14">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>284</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_15">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>309</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choose_16">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>334</y>
+     <width>33</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    background: rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="tools.qrc"/>
+ </resources>
+ <connections/>
+</ui>

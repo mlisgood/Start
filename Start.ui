@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartClass</class>
+ <widget class="QMainWindow" name="StartClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>一緒にモフモフしよー</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Start.qrc">
+    <normaloff>:/icon/main/picture_start/icon/icon_main_mainwindow.png</normaloff>:/icon/main/picture_start/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>80</y>
+      <width>18</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background: rgb(0,255,255,0);
+    border:0px solid rgb(0,128,76,71);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>171</x>
+      <y>90</y>
+      <width>18</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background: rgb(0,255,255,0);
+    border:0px solid rgb(0,128,76,71);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>87</x>
+      <y>197</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background: rgb(0,255,255,0);
+    border:0px solid rgb(0,128,76,71);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>214</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background: rgb(0,255,255,0);
+    border:0px solid rgb(0,128,76,71);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>197</x>
+      <y>249</y>
+      <width>37</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background: rgb(0,255,255,0);
+    border:0px solid rgb(0,128,76,71);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Start.qrc"/>
+ </resources>
+ <connections/>
+</ui>

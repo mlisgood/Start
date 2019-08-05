@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveClass</class>
+ <widget class="QDialog" name="SaveClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件还没保存呢……</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Notepad.qrc">
+    <normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</normaloff>:/icon/mainicon/picture_notepad/icon/icon_main_mainwindow.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <property name="locale">
+   <locale language="Chinese" country="China"/>
+  </property>
+  <widget class="QPushButton" name="pushButton_close_window">
+   <property name="geometry">
+    <rect>
+     <x>525</x>
+     <y>15</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/manage/picture_notepad/icon/window_close.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choice_1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>140</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_1_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_1_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choice_2">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>140</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_2_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_2_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_choice_3">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>140</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_3_normal.png);
+border-image: url(:/picture_notepad/dialogicon/picture_notepad/icon/dialog_save_choice_3_pressed.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_close_window</tabstop>
+  <tabstop>pushButton_choice_1</tabstop>
+  <tabstop>pushButton_choice_2</tabstop>
+  <tabstop>pushButton_choice_3</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Notepad.qrc"/>
+ </resources>
+ <connections/>
+</ui>
